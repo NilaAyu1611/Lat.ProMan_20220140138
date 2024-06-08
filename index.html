@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css"> <!-- Your custom CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+<body>  
+    <!-- Navbar -->    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-star"></i></a> <!-- Ganti icon dengan yang lebih menarik -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <P id="waktu"></P>
+            <div class="collapse navbar-collapse text-right" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a> <!-- Tambahkan link Home -->
+                    </li>              
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>      
+                    <li class="nav-item">
+                        <a class="nav-link" href="#price-section">Prices</a>
+                    </li>           
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Carousel -->
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <video class="d-block w-100" autoplay loop muted>
+                <source src="https://videos.pexels.com/video-files/4156092/4156092-hd_1280_720_50fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Join us for an unforgettable journey!</h5>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <video class="d-block w-100" autoplay loop muted>
+                <source src="https://videos.pexels.com/video-files/6071645/6071645-hd_1280_720_30fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Treat yourself to </h5>
+                <p>something extraordinary!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <video class="d-block w-100" autoplay loop muted>
+                <source src="https://videos.pexels.com/video-files/8777987/8777987-hd_1366_720_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Elevate your style </h5>
+                <p>with our latest collections!</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+    <!--  cards section-->
+  <div id = "about" class="container mt-5" style="background-color: black;">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://ik.imagekit.io/theartling/prod/tr:w-1650/products/Product/8fcecb647a544dddaf13238f3e858361_sw-2317_sh-2317.jpg" class="card-img-top" alt="Clock Image" style="width: 100%; height: auto;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Papyrus; font-weight: bold;">Graham Muir</h5>
+                    <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">Setelah 9 tahun mengajar kaca panas di Universitas Sunderland, Muir mendirikan studionya sendiri pada tahun 1999 dengan tujuan utama hanya berkonsentrasi pada karyanya sendiri.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://ik.imagekit.io/theartling/prod/tr:w-1020/products/Product/b1bd8da55cc64970bccfc3b076f5bc98_sw-3490_sh-3490.jpg" class="card-img-top" alt="Clock Image" style="width: 100%; height: auto;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Papyrus; font-weight: bold;">Enmark & ​​Thompson</h5>
+                    <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">Sejak belajar secara bersamaan di Royal College of Art pada tahun 2008, Hanne Enemark dan Louis Thompson telah berhasil bekerja sama dalam sejumlah komisi dan proyek pribadi, 
+                        menjadi semakin sadar akan kepentingan bersama dalam ketegangan antara kekacauan dan keteraturan , kerapuhan dan kekuatan , internal. struktur dan bentuk luar .</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://ik.imagekit.io/theartling/prod/tr:w-1020/products/Product/773442ee597e4e0fbe5fb455fc19f6e2_sw-3483_sh-3483.jpg" class="card-img-top" alt="Clock Image" style="width: 100%; height: auto;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Papyrus; font-weight: bold;">Allister Malcolm</h5>
+                    <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">Allister Malcolm telah menjadi pengrajin terkenal di bidangnya. Dia terus memperluas portofolio karya seni kaca buatan tangan, tiup & kontemporer, dan selera desainnya yang kuat 
+                        dikombinasikan dengan standar penyelesaian akhir yang sempurna, telah menciptakan basis kolektor yang berdedikasi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://ik.imagekit.io/theartling/prod/tr:w-1020/products/Product/0bcf6dacd01145fd9d28d9e19c0f28a5_sw-2516_sh-2515.jpg" class="card-img-top" alt="Clock Image" style="width: 100%; height: auto;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Papyrus; font-weight: bold;">Samantha Donaldson</h5>
+                    <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">Samantha Donaldson adalah seniman kaca kontemporer yang mengkhususkan diri pada teknik kaca panas dan dingin. 
+                        Setelah lulus dari Universitas De Montfort pada tahun 2009 
+                        dengan Gelar Kehormatan BA Kelas Satu dalam Kerajinan Desain, melanjutkan waktunya di De Montford sebagai seniman residensi, 
+                        Donaldson melanjutkan studi Masternya di Royal College of Art pada tahun 2012.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://ik.imagekit.io/theartling/prod/tr:w-1020/products/Product/6a3c004458e0484fbd3193cd632382ba_sw-2832_sh-2832.jpg" class="card-img-top" alt="Clock Image" style="width: 100%; height: auto;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Papyrus; font-weight: bold;">Ann Wåhlström</h5>
+                    <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">Dalam karirnya, Wåhlström telah merancang barang untuk banyak perusahaan internasional; gelas untuk merek seperti Ikea dan Kosta Boda , keramik , logam dan 
+                        tekstil untuk merek dari Cappellini hingga Boda Nova, karya Wåhlström memiliki bahan dan warna yang bervariasi. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://ik.imagekit.io/theartling/prod/tr:w-1020/products/Product/0297f4d994e94776bcd02591ab60bad7_sw-2782_sh-2782.jpg" class="card-img-top" alt="Clock Image" style="width: 100%; height: auto;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Papyrus; font-weight: bold;">Maarten Vrolijk</h5>
+                    <p class="card-text" style="font-family: 'Times New Roman', Times, serif;">Maarten Vrolijk adalah seniman dan desainer yang berbasis di Amsterdam yang menganggap penting untuk 
+                        menguraikan sifat sederhana dan tegas dari suatu produk dan telah menciptakan karyanya selama lebih dari 25 tahun</p>
+                </div>
+            </div>
+        </div>
+        
+</div>
+    
+
+<!-- New section for price cards -->
+<div id="price-section" class="container mt-5" style="background-color: black;">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="price-card">
+          <img src="https://ik.imagekit.io/theartling/prod/tr:w-1650/products/Product/8fcecb647a544dddaf13238f3e858361_sw-2317_sh-2317.jpg" class="price-card-img" alt="Clock Image">
+          <div class="price-card-body">
+            <h5 class="price-card-title">$1,200</h5>
+            <div class="price-card-icons">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-heart"></i>
+              <i class="fa fa-share"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="price-card">
+          <img src="https://ik.imagekit.io/theartling/prod/tr:w-1020/products/Product/b1bd8da55cc64970bccfc3b076f5bc98_sw-3490_sh-3490.jpg" class="price-card-img" alt="Clock Image">
+          <div class="price-card-body">
+            <h5 class="price-card-title">$2,000</h5>
+            <div class="price-card-icons">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-heart"></i>
+              <i class="fa fa-share"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="price-card">
+          <img src="https://ik.imagekit.io/theartling/prod/tr:w-1020/products/Product/773442ee597e4e0fbe5fb455fc19f6e2_sw-3483_sh-3483.jpg" class="price-card-img" alt="Clock Image">
+          <div class="price-card-body">
+            <h5 class="price-card-title">$1,800</h5>
+            <div class="price-card-icons">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-heart"></i>
+              <i class="fa fa-share"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="price-card">
+          <img src="https://ik.imagekit.io/theartling/prod/tr:w-1020/products/Product/0bcf6dacd01145fd9d28d9e19c0f28a5_sw-2516_sh-2515.jpg" class="price-card-img" alt="Clock Image">
+          <div class="price-card-body">
+            <h5 class="price-card-title">$1,500</h5>
+            <div class="price-card-icons">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-heart"></i>
+              <i class="fa fa-share"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="price-card">
+          <img src="https://ik.imagekit.io/theartling/prod/tr:w-1020/products/Product/6a3c004458e0484fbd3193cd632382ba_sw-2832_sh-2832.jpg" class="price-card-img" alt="Clock Image">
+          <div class="price-card-body">
+            <h5 class="price-card-title">$1,300</h5>
+            <div class="price-card-icons">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-heart"></i>
+              <i class="fa fa-share"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="price-card">
+          <img src="https://ik.imagekit.io/theartling/prod/tr:w-1020/products/Product/0297f4d994e94776bcd02591ab60bad7_sw-2782_sh-2782.jpg" class="price-card-img" alt="Clock Image">
+          <div class="price-card-body">
+            <h5 class="price-card-title">$2,500</h5>
+            <div class="price-card-icons">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-heart"></i>
+              <i class="fa fa-share"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+    
+    <!-- Contact Us Section -->
+<div id = "contact" class="form-card1 mt-5">
+    <div class="form-card2">
+        <form id="contact-form" class="form">
+            <p class="form-heading">Contact Us</p>
+
+            <div class="form-field">
+                <input required="" placeholder="Name" name="name" class="input-field" type="text" />
+            </div>
+
+            <div class="form-field">
+                <input required="" placeholder="Email" name="email" class="input-field" type="email" />
+            </div>
+
+            <div class="form-field">
+                <input required="" placeholder="Subject" name="subject" class="input-field" type="text" />
+            </div>
+
+            <div class="form-field">
+                <textarea required="" placeholder="Message" name="message" cols="30" rows="3" class="input-field"></textarea>
+            </div>
+
+            <button id="sendMessage-btn" class="sendMessage-btn">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="resultModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="result-container"></div>
+        <button id="cancel-btn">Cancel</button>
+        <button id="save-btn">Save</button>
+    </div>
+    
+</div>
+  
+
+
+    <!-- Footer -->
+<footer id="footer" class="text-center text-lg-start text-white">
+    <div class="container p-4 pb-0">
+        <section>
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Art Glass Exhibition</h6>
+                    <p>The Art Glass Exhibition 2024 showcases exquisite glass artworks and innovative glass-making techniques from renowned artists worldwide.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Useful Links</h6>
+                    <p><a class="text-white" href="#">Your Account</a></p>
+                    <p><a class="text-white" href="#register">Register</a></p>
+                    <p><a class="text-white" href="#about">All Exhibitions</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p><i class="fas fa-home mr-3"></i> Art Glass Gallery, Yogyakarta, ID</p>
+                    <p><i class="fas fa-envelope mr-3"></i> info@artglassexhibition.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +62 234 567 884 734</p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+                    <a class="btn btn-outline-light btn-floating m-1 socialContainer" role="button" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1 socialContainer" role="button" href="https://youtube.com/@kmti_umy?si=oq09KVVfU127FEbo"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1 socialContainer" role="button" href="https://www.instagram.com/nilaayucitrawulan3450?igsh=MTNqMW82emh0NmtoYQ==4"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Art Glass Exhibition
+    </div>
+</footer>
+
+ <!-- Script untuk menampilkan waktu -->
+<script>
+    function updateDateTime() {
+        const date = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
+        const formattedDate = date.toLocaleDateString('en-US', options);
+        document.getElementById("waktu").innerText = `🗓️${formattedDate} 🕝`; // Ubah innerHTML ke innerText
+    }
+
+    setInterval(updateDateTime, 1000);
+
+    updateDateTime();
+</script>
+
+<!-- Swal2 CSS and JS (Add this in the <head> or before the closing -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="script/script.js"></script>
+    </body>
+    </html>
+    
+
+
+
+    
